@@ -4,7 +4,7 @@ services:
     container_name: 'lab4'
     environment:
       MYSQL_DATABASE: lab4
-      MYSQL_USER: fcarella
+      MYSQL_USER: root
       MYSQL_PASSWORD: itstudies12345
       MYSQL_ROOT_PASSWORD: itstudies12345
     ports:

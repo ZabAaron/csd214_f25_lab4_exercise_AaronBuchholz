@@ -1,4 +1,4 @@
-package lab4.entities;
+package ca.saultcollege.lab4.entities;
 
 import jakarta.persistence.*;
 import java.util.Objects;

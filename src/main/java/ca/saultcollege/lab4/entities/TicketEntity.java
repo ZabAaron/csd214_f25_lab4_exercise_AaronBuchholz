@@ -1,4 +1,4 @@
-package lab4.entities;
+package ca.saultcollege.lab4.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorValue;
@@ -10,11 +10,10 @@ public class TicketEntity extends ProductEntity {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "price", nullable = false)
+    @Column(name = "price")
     private double price;
 
-    @Column(name = "copies", nullable = false)
-    private int copies;
+
 
     @Column(name = "description")
     private String description;
@@ -22,11 +21,10 @@ public class TicketEntity extends ProductEntity {
     public TicketEntity() {
     }
 
-    public TicketEntity(String title, double price, int copies, String description) {
+    public TicketEntity(String title, double price, String description) {
         super();
         this.title = title;
         this.price = price;
-        this.copies = copies;
         this.description = description;
 
     }
@@ -47,13 +45,6 @@ public class TicketEntity extends ProductEntity {
         this.price = price;
     }
 
-    public int getCopies() {
-        return copies;
-    }
-
-    public void setCopies(int copies) {
-        this.copies = copies;
-    }
 
     public String getDescription() {
         return description;
@@ -70,7 +61,7 @@ public class TicketEntity extends ProductEntity {
         return "TicketEntity{" +
                 "title='" + title + '\'' +
                 ", price=" + price +
-                ", copies=" + copies +
+
                 ", description='" + description + '\'' +
                 "} " + super.toString();
     }

@@ -1,6 +1,6 @@
-package lab4.repositories;
+package ca.saultcollege.lab4.repositories;
 
-import lab4.entities.MagazineEntity;
+import ca.saultcollege.lab4.entities.MagazineEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MagazineEntityRepository extends JpaRepository<MagazineEntity, Long> {

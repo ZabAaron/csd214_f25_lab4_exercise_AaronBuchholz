@@ -1,7 +1,6 @@
-package lab4.entities;
+package ca.saultcollege.lab4.entities;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.DiscriminatorColumn;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 import java.time.LocalDate;
@@ -10,7 +9,7 @@ import java.time.LocalDate;
 @DiscriminatorValue("MAGAZINE")
 public class MagazineEntity extends PublicationEntity {
 
-    @Column(name = "order_qty", nullable = false)
+    @Column(name = "order_qty")
     private int orderQty;
 
 

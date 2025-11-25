@@ -1,4 +1,4 @@
-package lab4.entities;
+package ca.saultcollege.lab4.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorValue;
@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @DiscriminatorValue("DISC_MAG")
 public class DiscMagEntity extends MagazineEntity {
 
-    @Column(name = "has_disc", nullable = false)
+    @Column(name = "has_disc")
     private boolean hasDisc;
 
     public DiscMagEntity() {

@@ -1,4 +1,4 @@
-package lab4.entities;
+package ca.saultcollege.lab4.entities;
 
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
@@ -36,11 +36,10 @@ public class BookEntity extends PublicationEntity {
     @Override
     public String toString() {
         return "Book{" +
-                ", author='" + author + '\'' +
+                " author='" + author + '\'' +
                 ", title='" + getTitle() + '\'' +
                 ", price='" + getPrice() + '\'' +
                 ", copies='" + getCopies() + '\'' +
-                ", author='" + author + '\'' +
                 "} " + super.toString();
     }
 }

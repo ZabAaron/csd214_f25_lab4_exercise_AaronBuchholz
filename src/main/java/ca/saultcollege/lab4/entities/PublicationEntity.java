@@ -1,11 +1,6 @@
-package lab4.entities;
+package ca.saultcollege.lab4.entities;
 
 import jakarta.persistence.*;
-import lab4.entities.ProductEntity;
-
-import java.util.Objects;
-
-
 
 
 @Entity
@@ -15,10 +10,10 @@ public abstract class PublicationEntity extends ProductEntity {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "price", nullable = false)
+    @Column(name = "price")
     private double price;
 
-    @Column(name = "copies", nullable = false)
+    @Column(name = "copies")
     private int copies;
 
     public PublicationEntity(String title, double price, int copies) {

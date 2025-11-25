@@ -1,7 +1,6 @@
-package lab4.repositories;
+package ca.saultcollege.lab4.repositories;
 
-import lab4.entities.BookEntity;
-import lab4.entities.ProductEntity;
+import ca.saultcollege.lab4.entities.BookEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
